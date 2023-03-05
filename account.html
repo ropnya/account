@@ -26,37 +26,45 @@
             <form method="post" action="account_confirm.php">
                 <div>
                     <label>名前(姓)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="id">
+                    <input type="text" maxlength="10" class="text" size="35" name="family">
                 </div>
+                <br>
                 <div>
                     <label>名前(名)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="id">
+                    <input type="text" maxlength="10" class="text" size="35" name="last">
                 </div>
+                <br>
                 <div>
                     <label>カナ(姓)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="id">
+                    <input type="text" maxlength="10" class="text" size="35" name="family_kana">
                 </div>
+                <br>
                 <div>
                     <label>カナ(名)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="id">
+                    <input type="text" maxlength="10" class="text" size="35" name="last_kana">
                 </div>
+                <br>
                 <div>
                     <label>メールアドレス</label>
-                    <input type="email" maxlength="100" class="text" size="35" name="id">
+                    <input type="email" maxlength="100" class="text" size="35" name="mail">
                 </div>
+                <br>
                 <div>
                     <label>パスワード</label>
-                    <input type="password" maxlength="10" class="text" size="35" name="id">
+                    <input type="password" maxlength="10" class="text" size="35" name="pass">
                 </div>
+                <br>
                 <div>
                     <label>性別</label>
                     <label><input type="radio" name="gender" value="0" checked>男</label>
                     <label><input type="radio" name="gender" value="1">女</label>
                 </div>
+                <br>
                 <div>
                     <label>郵便番号</label>
-                    <input type="text" maxlength="7" class="text" size="10" name="id">
+                    <input type="text" maxlength="7" class="text" size="10" name="postal">
                 </div>
+                <br>
                 <div>
                     <label>住所(都道府県)</label>
                     <select name="todofuken">
@@ -110,14 +118,17 @@
                         <option value="47">沖縄</option>
                     </select>
                 </div>
+                <br>
                 <div>
                     <label>住所(市区町村)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="id">
+                    <input type="text" maxlength="10" class="text" size="35" name="address">
                 </div>
+                <br>
                 <div>
                     <label>住所(番地)</label>
-                    <input type="text" maxlength="100" class="text" size="35" name="id">
+                    <input type="text" maxlength="100" class="text" size="35" name="address2">
                 </div>
+                <br>
                 <div>
                     <label>アカウント権限</label>
                     <select name="account">
