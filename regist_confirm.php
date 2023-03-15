@@ -9,30 +9,44 @@
         <h3>アカウント登録画面</h3>
         
         <div class="confirm">
-            <p>名前(姓)<?php echo $_POST['family'];?>
+            <label>名前(姓)</label>
+            <p><?php echo $_POST['family'];?>
             </p>
-            <p>名前(名)<?php echo $_POST['last'];?>
+            <label>名前(名)</label>
+            <p><?php echo $_POST['last'];?>
             </p>
-            <p>カナ(姓)<?php echo $_POST['family_kana'];?>
+            <label>カナ(姓)</label>
+            <p><?php echo $_POST['family_kana'];?>
             </p>
-            <p>カナ(名)<?php echo $_POST['last_kana'];?>
+            <label>カナ(名)</label>
+            <p><?php echo $_POST['last_kana'];?>
             </p>
-            <p>メールアドレス<?php echo $_POST['mail'];?>
+            <label>メールアドレス</label>
+            <p><?php echo $_POST['mail'];?>
             </p>
-            <p>パスワード<?php echo $_POST['pass'];?>
+            <label>パスワード</label>
+            <p><?php echo $_POST['pass'];?>
             </p>
-            <p>性別<?php echo $_POST['gender'];?>
+            <label>性別</label>
+            <p><?php if($_POST['gender']==="0"){echo '男';}
+            elseif($_POST['gender']==="1"){echo '女';}
+            ?></p>
+            <label>郵便番号</label>
+            <p><?php echo $_POST['postal'];?>
             </p>
-            <p>郵便番号<?php echo $_POST['postal'];?>
+            <label>住所(都道府県)</label>
+            <p><?php echo $_POST['todofuken'];?>
             </p>
-            <p>住所(都道府県)<?php echo $_POST['todofuken'];?>
+            <label>住所(市区町村)</label>
+            <p><?php echo $_POST['address'];?>
             </p>
-            <p>住所(市区町村)<?php echo $_POST['address'];?>
+            <label>住所(番地)</label>
+            <p><?php echo $_POST['address2'];?>
             </p>
-            <p>住所(番地)<?php echo $_POST['address2'];?>
-            </p>
-            <p>アカウント権限<?php echo $_POST['account'];?>
-            </p>
+            <label>アカウント権限/label>
+            <p><?php if($_POST['account']==="0"){echo '一般';}
+            elseif($_POST['account']==="1"){echo '管理者';}
+            ?></p>
 
             <form action="regist.php" method="post">
                 <input type="submit" class="button1" value="前に戻る">

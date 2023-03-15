@@ -69,71 +69,71 @@
                     <label>住所(都道府県)</label>
                     <select name="todofuken">
                         <option value="error"></option>
-                        <option value="1" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="1"){echo 'selected';}?>>北海道</option>
-                        <option value="2" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="2"){echo 'selected';}?>>青森</option>
-                        <option value="3" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="3"){echo 'selected';}?>>岩手</option>
-                        <option value="4" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="4"){echo 'selected';}?>>宮城</option>
-                        <option value="5" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="5"){echo 'selected';}?>>秋田</option>
-                        <option value="6" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="6"){echo 'selected';}?>>山形</option>
-                        <option value="7" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="7"){echo 'selected';}?>>福島</option>
-                        <option value="8" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="8"){echo 'selected';}?>>茨城</option>
-                        <option value="9" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="9"){echo 'selected';}?>>栃木</option>
-                        <option value="10" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="10"){echo 'selected';}?>>群馬</option>
-                        <option value="11" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="11"){echo 'selected';}?>>埼玉</option>
-                        <option value="12" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="12"){echo 'selected';}?>>千葉</option>
-                        <option value="13" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="13"){echo 'selected';}?>>東京</option>
-                        <option value="14" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="14"){echo 'selected';}?>>神奈川</option>
-                        <option value="15" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="15"){echo 'selected';}?>>新潟</option>
-                        <option value="16" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="16"){echo 'selected';}?>>富山</option>
-                        <option value="17" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="17"){echo 'selected';}?>>石川</option>
-                        <option value="18" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="18"){echo 'selected';}?>>福井</option>
-                        <option value="19" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="19"){echo 'selected';}?>>山梨</option>
-                        <option value="20" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="20"){echo 'selected';}?>>長野</option>
-                        <option value="21" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="21"){echo 'selected';}?>>岐阜</option>
-                        <option value="22" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="22"){echo 'selected';}?>>静岡</option>
-                        <option value="23" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="23"){echo 'selected';}?>>愛知</option>
-                        <option value="24" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="24"){echo 'selected';}?>>三重</option>
-                        <option value="25" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="25"){echo 'selected';}?>>滋賀</option>
-                        <option value="26" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="26"){echo 'selected';}?>>京都</option>
-                        <option value="27" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="27"){echo 'selected';}?>>大阪</option>
-                        <option value="28" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="28"){echo 'selected';}?>>兵庫</option>
-                        <option value="29" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="29"){echo 'selected';}?>>奈良</option>
-                        <option value="30" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="30"){echo 'selected';}?>>和歌山</option>
-                        <option value="31" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="31"){echo 'selected';}?>>鳥取</option>
-                        <option value="32" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="32"){echo 'selected';}?>>島根</option>
-                        <option value="33" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="33"){echo 'selected';}?>>岡山</option>
-                        <option value="34" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="34"){echo 'selected';}?>>広島</option>
-                        <option value="35" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="35"){echo 'selected';}?>>山口</option>
-                        <option value="36" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="36"){echo 'selected';}?>>徳島</option>
-                        <option value="37" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="37"){echo 'selected';}?>>香川</option>
-                        <option value="38" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="38"){echo 'selected';}?>>愛媛</option>
-                        <option value="39" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="39"){echo 'selected';}?>>高知</option>
-                        <option value="40" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="40"){echo 'selected';}?>>福岡</option>
-                        <option value="41" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="41"){echo 'selected';}?>>佐賀</option>
-                        <option value="42" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="42"){echo 'selected';}?>>長崎</option>
-                        <option value="43" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="43"){echo 'selected';}?>>熊本</option>
-                        <option value="44" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="44"){echo 'selected';}?>>大分</option>
-                        <option value="45" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="45"){echo 'selected';}?>>宮崎</option>
-                        <option value="46" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="46"){echo 'selected';}?>>鹿児島</option>
-                        <option value="47" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="47"){echo 'selected';}?>>沖縄</option>
+                        <option value="北海道" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="北海道"){echo 'selected';}?>>北海道</option>
+                        <option value="青森" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="青森"){echo 'selected';}?>>青森</option>
+                        <option value="岩手" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="岩手"){echo 'selected';}?>>岩手</option>
+                        <option value="宮城" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="宮城"){echo 'selected';}?>>宮城</option>
+                        <option value="秋田" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="秋田"){echo 'selected';}?>>秋田</option>
+                        <option value="山形" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="山形"){echo 'selected';}?>>山形</option>
+                        <option value="福島" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="福島"){echo 'selected';}?>>福島</option>
+                        <option value="茨城" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="茨城"){echo 'selected';}?>>茨城</option>
+                        <option value="栃木" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="栃木"){echo 'selected';}?>>栃木</option>
+                        <option value="群馬" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="群馬"){echo 'selected';}?>>群馬</option>
+                        <option value="埼玉" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="埼玉"){echo 'selected';}?>>埼玉</option>
+                        <option value="千葉" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="千葉"){echo 'selected';}?>>千葉</option>
+                        <option value="東京" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="東京"){echo 'selected';}?>>東京</option>
+                        <option value="神奈川" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="神奈川"){echo 'selected';}?>>神奈川</option>
+                        <option value="新潟" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="新潟"){echo 'selected';}?>>新潟</option>
+                        <option value="富山" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="富山"){echo 'selected';}?>>富山</option>
+                        <option value="石川" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="石川"){echo 'selected';}?>>石川</option>
+                        <option value="福井" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="福井"){echo 'selected';}?>>福井</option>
+                        <option value="山梨" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="山梨"){echo 'selected';}?>>山梨</option>
+                        <option value="長野" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="長野"){echo 'selected';}?>>長野</option>
+                        <option value="岐阜" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="岐阜"){echo 'selected';}?>>岐阜</option>
+                        <option value="静岡" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="静岡"){echo 'selected';}?>>静岡</option>
+                        <option value="愛知" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="愛知"){echo 'selected';}?>>愛知</option>
+                        <option value="三重" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="三重"){echo 'selected';}?>>三重</option>
+                        <option value="滋賀" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="滋賀"){echo 'selected';}?>>滋賀</option>
+                        <option value="京都" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="京都"){echo 'selected';}?>>京都</option>
+                        <option value="大阪" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="大阪"){echo 'selected';}?>>大阪</option>
+                        <option value="兵庫" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="兵庫"){echo 'selected';}?>>兵庫</option>
+                        <option value="奈良" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="奈良"){echo 'selected';}?>>奈良</option>
+                        <option value="和歌山" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="和歌山"){echo 'selected';}?>>和歌山</option>
+                        <option value="鳥取" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="鳥取"){echo 'selected';}?>>鳥取</option>
+                        <option value="島根" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="島根"){echo 'selected';}?>>島根</option>
+                        <option value="岡山" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="岡山"){echo 'selected';}?>>岡山</option>
+                        <option value="広島" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="広島"){echo 'selected';}?>>広島</option>
+                        <option value="山口" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="山口"){echo 'selected';}?>>山口</option>
+                        <option value="徳島" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="徳島"){echo 'selected';}?>>徳島</option>
+                        <option value="香川" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="香川"){echo 'selected';}?>>香川</option>
+                        <option value="愛媛" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="愛媛"){echo 'selected';}?>>愛媛</option>
+                        <option value="高知" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="高知"){echo 'selected';}?>>高知</option>
+                        <option value="福岡" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="福岡"){echo 'selected';}?>>福岡</option>
+                        <option value="佐賀" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="佐賀"){echo 'selected';}?>>佐賀</option>
+                        <option value="長崎" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="長崎"){echo 'selected';}?>>長崎</option>
+                        <option value="熊本" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="熊本"){echo 'selected';}?>>熊本</option>
+                        <option value="大分" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="大分"){echo 'selected';}?>>大分</option>
+                        <option value="宮崎" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="宮崎"){echo 'selected';}?>>宮崎</option>
+                        <option value="鹿児島" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="鹿児島"){echo 'selected';}?>>鹿児島</option>
+                        <option value="沖縄" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="沖縄"){echo 'selected';}?>>沖縄</option>
                     </select>
                 </div>
                 <br>
                 <div>
                     <label>住所(市区町村)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="address">
+                    <input type="text" maxlength="10" class="text" size="35" name="address" value=<?php if(!empty($_POST['address'])){echo $_POST['address'];}?>>
                 </div>
                 <br>
                 <div>
                     <label>住所(番地)</label>
-                    <input type="text" maxlength="100" class="text" size="35" name="address2">
+                    <input type="text" maxlength="100" class="text" size="35" name="address2" value=<?php if(!empty($_POST['address2'])){echo $_POST['address2'];}?>>
                 </div>
                 <br>
                 <div>
                     <label>アカウント権限</label>
                     <select name="account">
-                        <option value="0">一般</option>
-                        <option value="1">管理者</option>
+                        <option value="0" <?php if(!empty($_POST['account']) && $_POST["account"]==="0"){echo 'selected';}?>>一般</option>
+                        <option value="1" <?php if(!empty($_POST['account']) && $_POST["account"]==="1"){echo 'selected';}?>>管理者</option>
                 </div>
                 <div>
                     <input type="submit" class="submit" value="確認する">
