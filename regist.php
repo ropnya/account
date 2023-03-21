@@ -23,46 +23,54 @@
             <main>
             <h3>アカウント登録画面</h3>
             <br>
-            <form method="post" action="http://localhost/acountblog/regist_confirm.php">
+            <form method="post" action="http://localhost/acountblog/regist_confirm.php" name="accountblog" onsubmit="return formcheck()">
                 <div>
                     <label>名前(姓)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="family" value="<?php if(!empty($_POST['family'])){echo $_POST['family'];}?>">
+                    <input type="text" maxlength="10" class="text1" size="35" name="family" value="<?php if(!empty($_POST['family'])){echo $_POST['family'];}?>">
+                    <p id="notice-input-text1" style="display:none; color:red;">名前(姓)が未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>名前(名)</label>
                     <input type="text" maxlength="10" class="text" size="35" name="last" value="<?php if(!empty($_POST['last'])){echo $_POST['last'];}?>">
+                    <p id="notice-input-text2" style="display:none; color:red;">名前(名)が未入力です。</p>
+
                 </div>
                 <br>
                 <div>
                     <label>カナ(姓)</label>
                     <input type="text" maxlength="10" class="text" size="35" name="family_kana" value="<?php if(!empty($_POST['family_kana'])){echo $_POST['family_kana'];}?>">
+                    <p id="notice-input-text3" style="display:none; color:red;">カナ(姓)が未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>カナ(名)</label>
                     <input type="text" maxlength="10" class="text" size="35" name="last_kana" value="<?php if(!empty($_POST['last_kana'])){echo $_POST['last_kana'];}?>">
+                    <p id="notice-input-text4" style="display:none; color:red;">カナ(名)が未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>メールアドレス</label>
                     <input type="email" maxlength="100" class="text" size="35" name="mail" value="<?php if(!empty($_POST['mail'])){echo $_POST['mail'];}?>">
+                    <p id="notice-input-text5" style="display:none; color:red;">メールアドレスが未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>パスワード</label>
                     <input type="password" maxlength="10" class="text" size="35" name="pass" value="<?php if(!empty($_POST['pass'])){echo $_POST['pass'];}?>">
+                    <p id="notice-input-text6" style="display:none; color:red;">パスワードが未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>性別</label>
-                    <label><input type="radio" name="gender" value="0" <?php if(!empty($_POST['gender']) && $_POST['gender']==="0"){echo'checked';}?> checked>男</label>
-                    <label><input type="radio" name="gender" value="1" <?php if(!empty($_POST['gender']) && $_POST['gender']==="1"){echo'checked';}?>>女</label>
+                    <label><input type="radio" required name="gender" value="0" <?php if(!empty($_POST['gender']) && $_POST['gender']==="0"){echo'checked';}?> checked>男</label>
+                    <label><input type="radio" required name="gender" value="1" <?php if(!empty($_POST['gender']) && $_POST['gender']==="1"){echo'checked';}?>>女</label>
                 </div>
                 <br>
                 <div>
                     <label>郵便番号</label>
                     <input type="text" maxlength="7" class="text" size="10" name="postal" value="<?php if(!empty($_POST['postal'])){echo $_POST['postal'];}?>">
+                    <p id="notice-input-text7" style="display:none; color:red;">郵便番号が未入力です。</p>
                 </div>
                 <br>
                 <div>
@@ -117,23 +125,26 @@
                         <option value="鹿児島" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="鹿児島"){echo 'selected';}?>>鹿児島</option>
                         <option value="沖縄" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="沖縄"){echo 'selected';}?>>沖縄</option>
                     </select>
+                    <p id="notice-input-text10" style="display:none; color:red;">住所(都道府県)が未選択です。</p>
                 </div>
                 <br>
                 <div>
                     <label>住所(市区町村)</label>
-                    <input type="text" maxlength="10" class="text" size="35" name="address" value=<?php if(!empty($_POST['address'])){echo $_POST['address'];}?>>
+                    <input type="text"  maxlength="10" class="text" size="35" name="address" value=<?php if(!empty($_POST['address'])){echo $_POST['address'];}?>>
+                    <p id="notice-input-text8" style="display:none; color:red;">住所(市区町村)が未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>住所(番地)</label>
-                    <input type="text" maxlength="100" class="text" size="35" name="address2" value=<?php if(!empty($_POST['address2'])){echo $_POST['address2'];}?>>
+                    <input type="text"  maxlength="100" class="text" size="35" name="address2" value=<?php if(!empty($_POST['address2'])){echo $_POST['address2'];}?>>
+                    <p id="notice-input-text9" style="display:none; color:red;">住所(番地)が未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>アカウント権限</label>
                     <select name="account">
-                        <option value="0" <?php if(!empty($_POST['account']) && $_POST["account"]==="0"){echo 'selected';}?>>一般</option>
-                        <option value="1" <?php if(!empty($_POST['account']) && $_POST["account"]==="1"){echo 'selected';}?>>管理者</option>
+                        <option value="0"  <?php if(!empty($_POST['account']) && $_POST["account"]==="0"){echo 'selected';}?>>一般</option>
+                        <option value="1"  <?php if(!empty($_POST['account']) && $_POST["account"]==="1"){echo 'selected';}?>>管理者</option>
                 </div>
                 <div>
                     <input type="submit" class="submit" value="確認する">
@@ -143,5 +154,7 @@
         <footer>
             Copyright　D.I.works　D.I.blog　is　the　one　which　provides　A　to　Z　about　programming
         </footer>
+        <script src="formcheck.js"></script>
+
     </body>
 </html>
