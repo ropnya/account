@@ -5,6 +5,7 @@
      <meta charset="UTF-8">
         <title>アカウント登録</title>
         <link rel="stylesheet" type="text/css" href="style2.css">
+        <script src="formcheck.js"></script>
     </head>
 
     <body>
@@ -23,7 +24,7 @@
             <main>
             <h3>アカウント登録画面</h3>
             <br>
-            <form method="post" action="http://localhost/acountblog/regist_confirm.php" name="accountblog" onsubmit="return formcheck()">
+            <form method="post" action="http://localhost/acountblog/regist_confirm.php" name="accountblog" >
                 <div>
                     <label>名前(姓)</label>
                     <input type="text" maxlength="10" class="text1" size="35" name="family" value="<?php if(!empty($_POST['family'])){echo $_POST['family'];}?>">
@@ -76,7 +77,7 @@
                 <div>
                     <label>住所(都道府県)</label>
                     <select name="todofuken">
-                        <option value="error"></option>
+                        <option value=""></option>
                         <option value="北海道" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="北海道"){echo 'selected';}?>>北海道</option>
                         <option value="青森" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="青森"){echo 'selected';}?>>青森</option>
                         <option value="岩手" <?php if(!empty($_POST['todofuken']) && $_POST['todofuken']==="岩手"){echo 'selected';}?>>岩手</option>
@@ -125,19 +126,19 @@
                         <option value="鹿児島" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="鹿児島"){echo 'selected';}?>>鹿児島</option>
                         <option value="沖縄" <?php if(!empty($_POST['todofuken']) && $_POST["todofuken"]==="沖縄"){echo 'selected';}?>>沖縄</option>
                     </select>
-                    <p id="notice-input-text10" style="display:none; color:red;">住所(都道府県)が未選択です。</p>
+                    <p id="notice-input-text8" style="display:none; color:red;">住所(都道府県)が未選択です。</p>
                 </div>
                 <br>
                 <div>
                     <label>住所(市区町村)</label>
                     <input type="text"  maxlength="10" class="text" size="35" name="address" value=<?php if(!empty($_POST['address'])){echo $_POST['address'];}?>>
-                    <p id="notice-input-text8" style="display:none; color:red;">住所(市区町村)が未入力です。</p>
+                    <p id="notice-input-text9" style="display:none; color:red;">住所(市区町村)が未入力です。</p>
                 </div>
                 <br>
                 <div>
                     <label>住所(番地)</label>
                     <input type="text"  maxlength="100" class="text" size="35" name="address2" value=<?php if(!empty($_POST['address2'])){echo $_POST['address2'];}?>>
-                    <p id="notice-input-text9" style="display:none; color:red;">住所(番地)が未入力です。</p>
+                    <p id="notice-input-text10" style="display:none; color:red;">住所(番地)が未入力です。</p>
                 </div>
                 <br>
                 <div>
@@ -147,14 +148,14 @@
                         <option value="1"  <?php if(!empty($_POST['account']) && $_POST["account"]==="1"){echo 'selected';}?>>管理者</option>
                 </div>
                 <div>
-                    <input type="submit" class="submit" value="確認する">
+                    <input type="submit" class="submit" value="確認する" onclick="return formcheck()">
                 </div>
             </form>
         </main>
         <footer>
             Copyright　D.I.works　D.I.blog　is　the　one　which　provides　A　to　Z　about　programming
         </footer>
-        <script src="formcheck.js"></script>
+        
 
     </body>
 </html>
