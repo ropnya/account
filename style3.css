@@ -1,0 +1,31 @@
+.menu{ padding-left: 0px; width: 100%;height: 40px;background-color: black;margin-top: 0px;}
+ ul{float: left;line-height: 40px;}
+ ul li{float: left;padding-left: 70px;list-style: none;color: white;}
+ ul li a{color:white;text-decoration: none;}
+.fon1{padding-left:50px;}
+
+.fon2{margin-top: 200px;margin-left:800px;height:400px;
+
+}
+.fon3{margin-top: 1px;margin-left:850px;height:100px;
+
+}
+.button3{
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    color: white;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    border-bottom: solid 2px gray;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    clear: left;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+}

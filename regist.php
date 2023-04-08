@@ -147,13 +147,13 @@
                     <select name="account">
                         <option value="0"  <?php if(!empty($_POST['account']) && $_POST["account"]==="0"){echo 'selected';}?>>一般</option>
                         <option value="1"  <?php if(!empty($_POST['account']) && $_POST["account"]==="1"){echo 'selected';}?>>管理者</option>
+                    </select>
                 </div>
-                
+                <br>
+                <div>
+                        <input type="submit" class="submit" value="確認する" onclick="return formcheck()">
+                </div>
             </form>
-            <div>
-                    <label><input type="submit" class="submit" value="確認する" onclick="return formcheck()"></label>
-                </div>
-            </div>
         </main>
         <footer>
             Copyright　D.I.works　D.I.blog　is　the　one　which　provides　A　to　Z　about　programming

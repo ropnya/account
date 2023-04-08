@@ -39,7 +39,7 @@
                 elseif($_POST['account']==="1"){echo '管理者';}
                 ?></p>
                 <div class="bottom">
-                    <form action="regist.php" method="post">
+                    <form action="regist.php" method="post" class="bon1">
                         <input type="submit" class="button1" value="前に戻る">
                         <input type="hidden" value="<?php echo $_POST['family'];?>" name="family">
                         <input type="hidden" value="<?php echo $_POST['last'];?>" name="last">
@@ -54,8 +54,8 @@
                         <input type="hidden" value="<?php echo $_POST['address2'];?>" name="address2">
                         <input type="hidden" value="<?php echo $_POST['account'];?>" name="account">
                     </form>
-                    <form action="regist_complete.php" method="post">
-                        <input type="submit" class="buttom2" value="登録する">
+                    <form action="regist_complete.php" method="post" class="bon1">
+                        <input type="submit" class="button2" value="登録する">
                         <input type="hidden" value="<?php echo $_POST['family'];?>" name="family">
                         <input type="hidden" value="<?php echo $_POST['last'];?>" name="last">
                         <input type="hidden" value="<?php echo $_POST['family_kana'];?>" name="family_kana">
