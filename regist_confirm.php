@@ -12,8 +12,8 @@
                 <li>トップ</li>
                 <li>プロフィール</li>
                 <li>D.I.Blogについて</li>
-                <li><a href="account.html">アカウント登録</a></li>
-                <li>登録フォーム</li>
+                <li><a href="http://localhost/acountblog/regist.php">登録フォーム</a></li>
+                <li><a href="http://localhost/acountblog/list.php">アカウント一覧</a></li>
                 <li>問い合わせ</li>
                 <li>その他</li>
              </ul>

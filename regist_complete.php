@@ -4,9 +4,9 @@ $password_after = password_hash($password,PASSWORD_DEFAULT);
 mb_internal_encoding("utf8");
 try{
 $pdo=new PDO("mysql:dbname=lesson01; host=localhost;","root","");
-$pdo->exec("insert into acount(family_name,last_name,family_name_kana,last_name_kana,mail,password,gender,postal_code,prefecture,address_1,address_2,authority)
+$pdo->exec("insert into acount(family_name,last_name,family_name_kana,last_name_kana,mail,password,gender,postal_code,prefecture,address_1,address_2,authority,delete_flag)
 values('".$_POST['family']."','".$_POST['last']."','".$_POST['family_kana']."','".$_POST['last_kana']."','".$_POST['mail']."','$password_after',
-'".$_POST['gender']."','".$_POST['postal']."','".$_POST['todofuken']."','".$_POST['address']."','".$_POST['address2']."','".$_POST['account']."');");
+'".$_POST['gender']."','".$_POST['postal']."','".$_POST['todofuken']."','".$_POST['address']."','".$_POST['address2']."','".$_POST['account']."','0');");
 }catch(PDOException $e){
     echo '<font color=red>エラーが発生したためアカウント登録出来ません。</font>';
     exit;
@@ -27,8 +27,8 @@ values('".$_POST['family']."','".$_POST['last']."','".$_POST['family_kana']."','
                 <li>トップ</li>
                 <li>プロフィール</li>
                 <li>D.I.Blogについて</li>
-                <li><a href="account.html">アカウント登録</a></li>
-                <li>登録フォーム</li>
+                <li><a href="http://localhost/acountblog/regist.php">登録フォーム</a></li>
+                <li><a href="http://localhost/acountblog/list.php">アカウント一覧</a></li>
                 <li>問い合わせ</li>
                 <li>その他</li>
             </ul>
