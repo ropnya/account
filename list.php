@@ -31,10 +31,9 @@
                 mb_internal_encoding("utf8");
                 $pdo=new PDO("mysql:dbname=lesson01;host=localhost;","root","");
                 $stmt=$pdo->query("select* from acount ORDER BY id DESC");
-                
-                
 
                 echo"<table>";
+                
 
                 echo"<tr><th>ID</th><th>名前(姓)</th><th>名前(名)</th><th>カナ(姓)</th><th>カナ(名)</th><th>メールアドレス</th><th>性別</th><th>アカウント権限</th><th>削除フラグ</th><th>登録日時</th><th>更新日時</th><th>操作</th></tr>";
 
@@ -48,11 +47,23 @@
                     echo"<td>{$row['family_name_kana']}</td>";
                     echo"<td>{$row['last_name_kana']}</td>";
                     echo"<td>{$row['mail']}</td>";
-                    echo"<td>{$row['gender']}</td>";
-                    echo"<td>{$row['authority']}</td>";
+                    if($row['gender']===0){
+                        echo "<td>男</td>";
+                    }elseif($row['gender']===1){
+                        echo "<td>女</td>";
+                    }else{
+                        echo "<td>{$row['gender']}</td>";
+                    }
+                    if($row['authority']===0){
+                        echo "<td>一般</td>";
+                    }elseif($row['authority']===1){
+                        echo "<td>管理者</td>";
+                    }
+                    if($row['delete_flag'])
                     echo"<td>{$row['delete_flag']}</td>";
                     echo"<td>{$row['resistered_time']}</td>";
-                    echo"<td>{$row['update_time']}</td>";
+                    echo "<td>{$row['update_time']}</td>";
+                    echo "</tr>";
                 }
 
                 echo"</table>";
