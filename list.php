@@ -37,7 +37,6 @@
 
                 echo"<tr><th>ID</th><th>名前(姓)</th><th>名前(名)</th><th>カナ(姓)</th><th>カナ(名)</th><th>メールアドレス</th><th>性別</th><th>アカウント権限</th><th>削除フラグ</th><th>登録日時</th><th>更新日時</th><th>操作</th></tr>";
 
-                
                 while($row=$stmt->fetch()){
                     
                     echo"<tr>";
@@ -59,9 +58,16 @@
                     }elseif($row['authority']===1){
                         echo "<td>管理者</td>";
                     }
-                    if($row['delete_flag'])
-                    echo"<td>{$row['delete_flag']}</td>";
-                    echo"<td>{$row['resistered_time']}</td>";
+                    if($row['delete_flag']===0){
+                        echo "<td>有効</td>";
+                    }elseif($row['delete_flag']===1){
+                        echo "<td>無効</td>";
+                    }else{
+                        echo"<td>{$row['delete_flag']}</td>";
+                    }
+                    $time=DATE_FORMAT($row['resistered_time'],'%Y');
+                    echo "<td>$time</td>";
+                    //echo"<td>{$row['resistered_time']}</td>";
                     echo "<td>{$row['update_time']}</td>";
                     echo "</tr>";
                 }
