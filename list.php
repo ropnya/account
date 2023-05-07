@@ -65,8 +65,9 @@
                     }else{
                         echo"<td>{$row['delete_flag']}</td>";
                     }
-                    $time=DATE_FORMAT($row['resistered_time'],'%Y');
-                    echo "<td>$time</td>";
+                    $time=$row['resistered_time'];
+                    $settime=date('Y-m-d',strtotime($time));
+                    echo "<td>$settime</td>";
                     //echo"<td>{$row['resistered_time']}</td>";
                     echo "<td>{$row['update_time']}</td>";
                     echo "</tr>";
