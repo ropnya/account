@@ -27,11 +27,12 @@
                 <p>アカウント一覧画面</p>
             </div>
             <br>
+            <from action>
             <?php
                 mb_internal_encoding("utf8");
                 $pdo=new PDO("mysql:dbname=lesson01;host=localhost;","root","");
                 $stmt=$pdo->query("select* from acount ORDER BY id DESC");
-
+                
                 echo"<table>";
                 
 
@@ -65,13 +66,13 @@
                     }else{
                         echo"<td>{$row['delete_flag']}</td>";
                     }
-                    $time=$row['resistered_time'];
-                    $settime=date('Y-m-d',strtotime($time));
+                    $settime=date('Y-m-d',strtotime($row['resistered_time']));
                     echo "<td>$settime</td>";
-                    //echo"<td>{$row['resistered_time']}</td>";
-                    echo "<td>{$row['update_time']}</td>";
-                    echo "</tr>";
+                    $uptime=date('Y-m-d',strtotime($row['update_time']));
+                    echo "<td>$uptime</td>";
+                    
                 }
+                
 
                 echo"</table>";
                 
