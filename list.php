@@ -27,16 +27,12 @@
                 <p>アカウント一覧画面</p>
             </div>
             <br>
-            <from action>
+            <table>
+            <tr><th>ID</th><th>名前(姓)</th><th>名前(名)</th><th>カナ(姓)</th><th>カナ(名)</th><th>メールアドレス</th><th>性別</th><th>アカウント権限</th><th>削除フラグ</th><th>登録日時</th><th>更新日時</th><th>操作</th></tr>
             <?php
                 mb_internal_encoding("utf8");
                 $pdo=new PDO("mysql:dbname=lesson01;host=localhost;","root","");
                 $stmt=$pdo->query("select* from acount ORDER BY id DESC");
-                
-                echo"<table>";
-                
-
-                echo"<tr><th>ID</th><th>名前(姓)</th><th>名前(名)</th><th>カナ(姓)</th><th>カナ(名)</th><th>メールアドレス</th><th>性別</th><th>アカウント権限</th><th>削除フラグ</th><th>登録日時</th><th>更新日時</th><th>操作</th></tr>";
 
                 while($row=$stmt->fetch()){
                     
@@ -72,11 +68,17 @@
                     echo "<td>$uptime</td>";
                     
                 }
-                
-
-                echo"</table>";
-                
             ?>
+            
+            <td>
+            <from action="http://localhost/acountblog/update.php">
+                <input type="submit" value="更新">
+            </from>
+            <from action="aa">
+                <input type="submit" value="削除">
+            </from>
+            </td>
+            </table>
         </main>
     </body>
 </html>
